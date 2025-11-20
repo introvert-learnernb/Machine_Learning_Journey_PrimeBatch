@@ -99,8 +99,44 @@
 
 #counting number of vowels in a string
 
-count = 0
-for char in "Education":
-    if char.lower() in 'aeiou':
-        count += 1
-print("Number of vowels in 'Education':", count)
+# count = 0
+# for char in "Education":
+#     if char.lower() in 'aeiou':
+#         count += 1
+# print("Number of vowels in 'Education':", count)
+
+#sum of first n natural numbers
+
+# n = int(input("Enter a positive integer n to calculate the sum of first n natural numbers: "))
+# sum = 0
+# for i in range(1,n+1):
+#     sum += i
+    
+# print("The sum of first", n, "natural numbers is:", sum)
+
+#functions 
+
+# def avg(a,b,c = 3): #non-default parameter should come before default parameter
+#     return (a + b + c) / 3
+
+# print(avg(10, 20))
+
+#lambda function 
+#why lambda function - to create small anonymous functions at runtime without using def keyword
+#lambda is fast why because it is optimized for performance and used for simple operations
+#lambda is optimized for performance how ? - it avoids the overhead of function calls and is implemented in C internally
+
+# square = lambda x: x * x
+# print(square(5))
+
+#Calculating factorial using function
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    
+num = int(input("Enter a number to calculate its factorial: "))
+result = factorial(num)
+print("The factorial of", num, "is:", result)
