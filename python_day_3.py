@@ -186,3 +186,29 @@
 # print("Difference of sets (my_set - new_set):", difference_set)
 
 
+
+# #Create a list of tuples where each tuple contains a student's name and their course  
+
+# students_courses = [("Alice", "English"), ("Alice", "Science"), ("Charlie", "History"), ("Diana", "English"), ("Ethan", "Science")]
+
+# #list all unique courses
+
+# unique_courses = set(courses for _, courses in students_courses)
+
+# english_students = [student for student, course in students_courses if course == "English"]
+    
+# print("Unique Courses:", unique_courses)
+# print("Students enrolled in English course:", english_students)
+
+
+# dict = {}
+
+# for student,course in students_courses:
+#     if student not in dict:
+#         dict.update({student: []})
+#         dict[student].append(course)
+#     else:
+#         dict[student].append(course)
+        
+# print("Student-Course Dictionary:", dict)
+
