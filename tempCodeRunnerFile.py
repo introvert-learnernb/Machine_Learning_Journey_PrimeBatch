@@ -1,6 +1,8 @@
-number = int(input("Enter a number: "))
+nc = input("Enter new city :")
+# np = int(input("Enter new population :"))
 
-# if number % 2 == 0:
-#     print(number, "is an even number.")
-# else:
-#     print(number, "is an odd number.")
+# ncs.update({nc:np})
+# print(ncs)
+
+# with open("cities.json","w") as f:
+#     json.dump(ncs,f,indent=4)
